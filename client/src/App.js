@@ -1,19 +1,26 @@
 import React, { Component } from "react";
+import "typeface-roboto";
 import "./App.css";
 import AppRouter from "./routers/AppRouter";
-import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import Reboot from "material-ui/Reboot";
+import { createMuiTheme } from 'material-ui/styles';
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-
-
+const theme = createMuiTheme({
+  palette: {
+    type: 'dark',
+  },
+});
 
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-        <AppRouter />
-      </MuiThemeProvider>
+      <div>
+        <Reboot />
+        <MuiThemeProvider theme={theme}>
+          <AppRouter />
+        </MuiThemeProvider>
+      </div>
     );
   }
 }

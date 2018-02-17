@@ -1,19 +1,32 @@
-import React from "react";
+import React, { Component } from "react";
+import Grid from "material-ui/Grid";
+import Paper from "material-ui/Paper";
+import Typography from "material-ui/Typography";
 
-const About = () => {
-  return (
-    <div>
-      <p className="flow-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
-      </p>
-    </div>
-  );
-};
+class About extends Component {
+
+  componentDidMount(props){
+    console.log(props) 
+   }
+
+  render(){
+    return (
+      <Grid container>
+        <Grid item xs={12}>
+          <Paper elevation={4}>
+            <Typography variant="headline" component="h3">
+              This is a sheet of paper.
+            </Typography>
+            <Typography component="p">
+              Paper can be used to build surface or other elements for your
+              application.
+            </Typography>
+          </Paper>
+        </Grid>
+      </Grid>
+    );
+  }
+}
+
 
 export default About;
