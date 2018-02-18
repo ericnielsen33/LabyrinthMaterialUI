@@ -1,15 +1,28 @@
 import React, { Component } from "react";
 import "typeface-roboto";
 import "./App.css";
-import AppRouter from "./routers/AppRouter";
 import Reboot from "material-ui/Reboot";
-import { createMuiTheme } from 'material-ui/styles';
+import { createMuiTheme } from "material-ui/styles";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import Layout from "../src/components/Layout";
+
 
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
-  },
+    primary: {
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary: {
+      light: '#ff7961',
+      main: '#f44336',
+      dark: '#ba000d',
+      contrastText: '#000',
+    }
+  }
 });
 
 class App extends Component {
@@ -18,7 +31,7 @@ class App extends Component {
       <div>
         <Reboot />
         <MuiThemeProvider theme={theme}>
-          <AppRouter />
+          <Layout />
         </MuiThemeProvider>
       </div>
     );
