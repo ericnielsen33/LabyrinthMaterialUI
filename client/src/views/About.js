@@ -1,32 +1,46 @@
 import React, { Component } from "react";
+import { withStyles } from "material-ui/styles";
+import Divider from 'material-ui/Divider';
 import Grid from "material-ui/Grid";
 import Paper from "material-ui/Paper";
 import Typography from "material-ui/Typography";
 
+const styles = theme => ({
+  root: {
+    flexGrow: 1
+  },
+  paper: {
+    padding: theme.spacing.unit * 2,
+    textAlign: "center",
+    color: theme.palette.text.secondary
+  }
+});
+
 class About extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-  componentDidMount(props){
-    console.log(props) 
-   }
-
-  render(){
+  render() {
+    const classes = this.props.classes;
+    console.log(this.props);
     return (
-      <Grid container>
-        <Grid item xs={12}>
-          <Paper elevation={4}>
-            <Typography variant="headline" component="h3">
-              This is a sheet of paper.
-            </Typography>
-            <Typography component="p">
-              Paper can be used to build surface or other elements for your
-              application.
-            </Typography>
-          </Paper>
+      <div className={classes.root}>
+        <Grid container spacing={16}>
+          <Grid item xs={12} m={6}>
+            <Paper className={classes.paper}>
+              <Typography variant="headline">Two</Typography>
+            </Paper>
+          </Grid>
+          <Grid item xs={12} m={6}>
+            <Paper className={classes.paper}>
+              <Typography variant="headline">One</Typography>
+            </Paper>
+          </Grid>
         </Grid>
-      </Grid>
+      </div>
     );
   }
 }
 
-
-export default About;
+export default withStyles(styles)(About);
