@@ -7,7 +7,6 @@ import Typography from "material-ui/Typography";
 import {
   Code,
   Build,
-  Visibility,
   Poll,
   BusinessCenter,
   AttachMoney,
@@ -23,36 +22,38 @@ const styles = theme => ({
   },
   attention: {
     backgroundColor: theme.palette.primary.dark,
-    padding: 50
+    padding: "5%"
   },
   attentionPaper: {
+    flexGrow: 1,
     backgroundColor: theme.palette.primary.dark,
     fontColor: theme.palette.secondary.light,
     border: "solid",
     borderColor: theme.palette.primary.main,
     borderRadius: 15,
     borderWidth: 1,
-    padding: 40,
     margin: 10,
-    minHeight: 250
+    padding: '2em',
+    minHeight: 210
   },
   headline: {
     fontColor: theme.palette.secondary.main
   },
   process: {
     backgroundColor: theme.palette.primary.main,
-    padding: 50
+    padding: "5%"
   },
   processPaper: {
+    flexGrow: 1,
     backgroundColor: theme.palette.primary.main,
     fontColor: theme.palette.secondary.dark,
     border: "solid",
     borderColor: theme.palette.primary.dark,
     borderRadius: 15,
     borderWidth: 1,
-    padding: 40,
     margin: 10,
-    minHeight: 250
+    padding: '2em',
+    minHeight: 210
   },
   icons: {
     color: theme.palette.secondary.light,
@@ -84,8 +85,8 @@ class Home extends Component {
           </Grid>
           <Grid item xs={12}>
             <Paper className={classes.attentionPaper}>
-              <Grid container direction="column" spacing={24}>
-                <Grid item>
+              <Grid container direction="column">
+                <Grid item xs={12}>
                   <Typography color="primary" variant="display2" align="center">
                     Let's get started
                   </Typography>
@@ -104,7 +105,6 @@ class Home extends Component {
                           container
                           justify="space-between"
                           alignItems="center"
-                          spacing={24}
                         >
                           <Grid item xs={12}>
                             <Typography color="primary" variant="display1">
@@ -115,7 +115,7 @@ class Home extends Component {
                             <BusinessCenter className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography>
+                            <Typography align="left">
                               We sit down with you and understand your business
                               and marketing objectives.
                             </Typography>
@@ -124,7 +124,7 @@ class Home extends Component {
                             <AttachMoney className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography>
+                            <Typography align="left">
                               We design a plan that fits your budget and needs.
                             </Typography>
                           </Grid>
@@ -137,7 +137,6 @@ class Home extends Component {
                           container
                           justify="space-between"
                           alignItems="center"
-                          spacing={24}
                         >
                           <Grid item xs={12}>
                             <Typography color="primary" variant="display1">
@@ -148,7 +147,7 @@ class Home extends Component {
                             <DirectionsWalk className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography>
+                            <Typography align="left">
                               We begin by understanding your customer journey.
                             </Typography>
                           </Grid>
@@ -156,7 +155,7 @@ class Home extends Component {
                             <Code className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography>
+                            <Typography align="left">
                               Perform a full audit of your digital presence and
                               current marketing tactics.
                             </Typography>
@@ -174,22 +173,21 @@ class Home extends Component {
           <Grid item xs={12}>
             <Paper className={classes.processPaper}>
               <Grid container direction="column" spacing={24}>
-                <Grid item>
+                <Grid item xs={12}>
                   <Typography color="inherit" variant="display2" align="center">
                     And never stop
                   </Typography>
                 </Grid>
-                <Grid item>
+                <Grid item xs={12}>
                   <Grid
                     container
-                    direction="row"
                     alignContent="center"
                     justify="space-around"
                     spacing={8}
                   >
                     <Grid item xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.processPaper}>
-                        <Grid container alignItems="center" spacing={24}>
+                        <Grid container alignItems="center">
                           <Grid item xs={12}>
                             <Typography color="inherit" variant="display1">
                               Measure
@@ -199,7 +197,7 @@ class Home extends Component {
                             <Functions className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography color="inherit">
+                            <Typography align="left" color="inherit">
                               Deploy analytics and measure data no matter the
                               channel.
                             </Typography>
@@ -208,7 +206,7 @@ class Home extends Component {
                             <Poll className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography color="inherit">
+                            <Typography align="left" color="inherit">
                               Determine marketing performance benchmarks, and
                               decide appropriate ad spend based on ROI.
                             </Typography>
@@ -218,7 +216,7 @@ class Home extends Component {
                     </Grid>
                     <Grid xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.processPaper}>
-                        <Grid container alignItems="center" spacing={24}>
+                        <Grid container alignItems="center">
                           <Grid item xs={12}>
                             <Typography color="inherit" variant="display1">
                               Optimize
@@ -228,7 +226,7 @@ class Home extends Component {
                             <Build className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography color="inherit">
+                            <Typography align="left" color="inherit">
                                 Gain insight from analytics to enhance and refine your marketing strategy.
                             </Typography>
                           </Grid>
@@ -236,7 +234,7 @@ class Home extends Component {
                             <Group className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
-                            <Typography color="inherit">
+                            <Typography align="left" color="inherit">
                                 Continue working together to ensure success in a changing world.
                             </Typography>
                           </Grid>

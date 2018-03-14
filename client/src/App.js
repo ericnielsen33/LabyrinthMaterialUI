@@ -6,14 +6,6 @@ import { createMuiTheme } from "material-ui/styles";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Layout from "../src/components/Layout";
 
-// colors
-const lab_Bittersweet = '#FC6255';
-const lab_paleTurquoise = '#BFF4ED';
-
-
-const lab_almostWhite = '#FAFAFA';
-const lab_white = '#FFFFFF';
-
 
 const theme = createMuiTheme({
   palette: {
