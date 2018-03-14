@@ -24,10 +24,10 @@ class BlogPost extends Component {
     return (
       <div className={classes.root}>
         <Grid container direction="column">
-          <Grid item xs={12} s={12} m={6} l={6} xl={4}>
+          <Grid item xs={12} >
             <Typography variant="headline">This is a blog post!</Typography>
           </Grid>
-          <Grid item xs={12} s={12} m={6} l={6} xl={4}>
+          <Grid item xs={12} l={10}>
             <Typography align="justify" paragraph={true} variant="body1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
