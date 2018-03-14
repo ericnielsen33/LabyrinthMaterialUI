@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "typeface-roboto";
 import "./App.css";
-import Reboot from "material-ui/Reboot";
+// import Reboot from "material-ui/Reboot";
 import { createMuiTheme } from "material-ui/styles";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Layout from "../src/components/Layout";
@@ -37,7 +37,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Reboot />
+      
         <MuiThemeProvider theme={theme}>
           <Layout />
         </MuiThemeProvider>
