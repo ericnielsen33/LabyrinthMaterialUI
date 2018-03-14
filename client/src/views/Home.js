@@ -98,7 +98,7 @@ class Home extends Component {
                     justify="space-around"
                     spacing={8}
                   >
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.attentionPaper}>
                         <Grid
                           container
@@ -111,7 +111,7 @@ class Home extends Component {
                               Discovery
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <BusinessCenter className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -120,7 +120,7 @@ class Home extends Component {
                               and marketing objectives.
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <AttachMoney className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -131,7 +131,7 @@ class Home extends Component {
                         </Grid>
                       </Paper>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.attentionPaper}>
                         <Grid
                           container
@@ -144,7 +144,7 @@ class Home extends Component {
                               Audit
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <DirectionsWalk className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -152,7 +152,7 @@ class Home extends Component {
                               We begin by understanding your customer journey.
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <Code className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -187,7 +187,7 @@ class Home extends Component {
                     justify="space-around"
                     spacing={8}
                   >
-                    <Grid item xs={5}>
+                    <Grid item xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.processPaper}>
                         <Grid container alignItems="center" spacing={24}>
                           <Grid item xs={12}>
@@ -195,7 +195,7 @@ class Home extends Component {
                               Measure
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <Functions className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -204,7 +204,7 @@ class Home extends Component {
                               channel.
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <Poll className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -216,7 +216,7 @@ class Home extends Component {
                         </Grid>
                       </Paper>
                     </Grid>
-                    <Grid item xs={5}>
+                    <Grid xs={12} md={6} l={5} xl={4}>
                       <Paper className={classes.processPaper}>
                         <Grid container alignItems="center" spacing={24}>
                           <Grid item xs={12}>
@@ -224,7 +224,7 @@ class Home extends Component {
                               Optimize
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <Build className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
@@ -232,7 +232,7 @@ class Home extends Component {
                                 Gain insight from analytics to enhance and refine your marketing strategy.
                             </Typography>
                           </Grid>
-                          <Grid item xs={2}>
+                          <Grid item xs={6} md={2}>
                             <Group className={classes.icons} />
                           </Grid>
                           <Grid item xs={10}>
