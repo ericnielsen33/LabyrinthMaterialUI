@@ -8,7 +8,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1,
     padding:20,
-    backgroundColor:theme.palette.secondary.dark,
+    backgroundColor:theme.palette.primary.dark,
   }
 });
 
@@ -22,7 +22,9 @@ class Blog extends Component {
     return (
       <div className={classes.root}>
         <Grid alignItems="center" container>
+          <Grid xs={12} l={10}>
           <BlogPosts />
+          </Grid >
         </Grid>
       </div>
     );

@@ -45,7 +45,7 @@ class ThreeButton extends Component {
     return (
       <div className={classes.root}>
         <Grid container spacing={24}>
-          <Grid item xs={12} s={12} m={6} l={6} xl={6}>
+          <Grid item xs={12} s={12} m={10} l={8} xl={8}>
             <Paper className={classes.paper}>
               <Grid container direction="column">
                 <Grid item>

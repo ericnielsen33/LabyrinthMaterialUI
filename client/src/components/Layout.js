@@ -146,8 +146,7 @@ class Layout extends Component {
           </div>
           <Button href="/" color="inherit" >Home</Button>
           <Divider />
-          <Button href="/about" color="inherit">About</Button>
-          <Divider />
+          
           <Button href="/blog" color="inherit">Blog</Button>
         </div>
       </Drawer>
