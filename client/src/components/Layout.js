@@ -13,12 +13,23 @@ import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 import ChevronRightIcon from 'material-ui-icons/ChevronRight';
 import AppRouter from '../routers/AppRouter';
 
+import labLogo from '../images/Labyrinth_Digital-color.svg';
+
 const drawerWidth = 240;
 
 const styles = theme => ({
+  logo:{
+    width: 'auto',
+    height: 50,
+    
+  },
+  logoImg:{
+    width: 'auto',
+    height:'100%',
+  },
   root: {
     width: '100%',
-    height: 430,
+    height: '100%',
     zIndex: 1,
     overflow: 'hidden',
   },
@@ -29,6 +40,7 @@ const styles = theme => ({
     height: '100%',
   },
   appBar: {
+    backgroundColor: theme.palette.primary.main,
     position: 'absolute',
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -67,7 +79,7 @@ const styles = theme => ({
     width: '100%',
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing.unit * 3,
+    // padding: theme.spacing.unit * 3,
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -132,7 +144,7 @@ class Layout extends Component {
               {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
             </IconButton>
           </div>
-          <Button href="/" color="inherit">Home</Button>
+          <Button href="/" color="inherit" >Home</Button>
           <Divider />
           <Button href="/about" color="inherit">About</Button>
           <Divider />
@@ -152,16 +164,16 @@ class Layout extends Component {
           >
             <Toolbar disableGutters={!open}>
               <IconButton
-                color="inherit"
+                color="default"
                 aria-label="open drawer"
                 onClick={this.handleDrawerOpen}
                 className={classNames(classes.menuButton, open && classes.hide)}
               >
                 <MenuIcon />
               </IconButton>
-              <Typography variant="title" color="inherit" noWrap>
-                Labyrinth Digital
-              </Typography>
+              <div className={classes.logo}>
+                <img className={classes.logoImg} src={labLogo}  />  
+              </div>
             </Toolbar>
           </AppBar>
           {drawer}

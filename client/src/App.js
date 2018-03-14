@@ -6,21 +6,29 @@ import { createMuiTheme } from "material-ui/styles";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Layout from "../src/components/Layout";
 
+// colors
+const lab_Bittersweet = '#FC6255';
+const lab_paleTurquoise = '#BFF4ED';
+
+
+const lab_almostWhite = '#FAFAFA';
+const lab_white = '#FFFFFF';
+
 
 const theme = createMuiTheme({
   palette: {
     type: 'dark',
     primary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
+      light: '#FC6255',
+      main: '#00D3B7',
+      dark: '#171928',
+      contrastText: '#FAFAFA',
     },
     secondary: {
-      light: '#ff7961',
-      main: '#f44336',
-      dark: '#ba000d',
-      contrastText: '#000',
+      light: '#BFF4ED',
+      main: '#FA4132',
+      dark: '#51535E',
+      contrastText: '#FAFAFA',
     }
   }
 });
